@@ -21,7 +21,7 @@ public class PeopleCreator {
         }
     }
 
-    public People randomPeople(){
+    private People randomPeople(){
         String firstName = randomFirstName();
         String lastName = randomLastName();
         String gender = randomGender();
@@ -32,6 +32,7 @@ public class PeopleCreator {
     private String randomFirstName() {
         int i = (new Random()).nextInt(11);
         switch (i){
+            case 0 : return "Sergey";
             case 1 : return "Nikita";
             case 2 : return "Kristina";
             case 3 : return "Grisha";
@@ -41,7 +42,6 @@ public class PeopleCreator {
             case 7 : return "Dima";
             case 8 : return "Stas";
             case 9 : return "Alex";
-            case 10 : return "Sergey";
         }
         return "Ivan";
     }
@@ -49,6 +49,7 @@ public class PeopleCreator {
     private String randomLastName() {
         int i = (new Random()).nextInt(11);
         switch (i){
+            case 0 : return "Polykov";
             case 1 : return "Kuznetsov";
             case 2 : return "Chistovich";
             case 3 : return "Tatishev";
@@ -58,7 +59,6 @@ public class PeopleCreator {
             case 7 : return "Kolmagin";
             case 8 : return "Tymanov";
             case 9 : return "Krasnikov";
-            case 10 : return "Polykov";
         }
         return "Ivanov";
     }
