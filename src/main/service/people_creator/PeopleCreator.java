@@ -21,7 +21,7 @@ public class PeopleCreator {
         }
     }
 
-    public People randomPeople(){
+    private People randomPeople(){
         String firstName = randomFirstName();
         String lastName = randomLastName();
         String gender = randomGender();
